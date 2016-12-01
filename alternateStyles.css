@@ -1,0 +1,27 @@
+body {
+    background: #000000;
+}
+#timeElement {
+    color: #C4DCFF;
+}
+#dateElement {
+    color: #054985;
+}
+#currentTemp {
+    color: #C4DCFF;
+}
+#eventHeader {
+    color: #C4DCFF;
+}
+#eventList {
+    color: #054985;
+}
+#timeElementV {
+    color: #C4DCFF;
+}
+#currentTempV {
+    color: #C4DCFF;
+}
+#eventListV {
+    color: #054985;
+}

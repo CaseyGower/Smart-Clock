@@ -1,0 +1,206 @@
+                            .container1 {
+                                width: 1920px;
+                                height: 1080px;
+                                overflow: hidden;
+                                margin: 0 auto;
+                            }
+                            .container2 {
+                                width: 1080px;
+                                height: 1920px;
+                                overflow: hidden;
+                                margin: 0 auto;
+                            }
+                            body {
+                                background: #fffad5;
+                                font-family: 'Oswald', sans-serif;
+                            }
+                            .row {
+                                border-bottom: 5px solid #424e4f;
+                            }
+                            .col-md-6 {
+                                border-left: 5px solid #424e4f;
+                            }
+                            .col-md-4 {
+                                border-left: 5px solid #424e4f;
+                            }
+                            #timeElement {
+                                font-size: 35rem;
+                                color: #c13b00;
+                                font-weight: bold;
+                                text-align: center;
+                            }
+                            #dateElement {
+                                font-size: 20rem;
+                                color: #424e4f;
+                                font-weight: lighter;
+                                text-align: center;
+                                margin-bottom: 3rem;
+                            }
+                            #eventHeader {
+                                font-size: 10rem;
+                                color: #c13b00;
+                                overflow: show;
+                                text-align: center;
+                                margin: 2rem;
+                            }
+                            #eventList {
+                                font-size: 8rem;
+                                color: #424e4f;
+                                font-weight: lighter;
+                                text-decoration: none;
+                                text-align: center;
+                            }
+                            #eventList > li {
+                                text-decoration: none;
+                            }
+                            #bibleVerse {
+                                font-size: 7rem;
+                                color: #424e4f;
+                                overflow: auto;
+                                font-weight: lighter;
+                                text-align: center;
+                            }
+                            #currentTemp {
+                                font-size: 20rem;
+                                color: #c13b00;
+                                float: auto;
+                                margin-top: 5rem;
+                                text-align: center;
+                            }
+                            #weatherImg {
+                                width: 42rem;
+                                margin-top: 5rem;
+                            }
+                            #timeElementV {
+                                font-size: 50rem;
+                                color: #c13b00;
+                                font-weight: bold;
+                                text-align: center;
+                            }
+                            #bibleVerseV {
+                                font-size: 6rem;
+                                color: #424e4f;
+                                overflow: auto;
+                                font-weight: lighter;
+                                text-align: center;
+                            }
+                            #currentTempV {
+                                font-size: 25rem;
+                                color: #c13b00;
+                                margin: 0 auto;
+                                text-align: center;
+                            }
+                            #weatherImgV {
+                                width: 40rem;
+                            }
+                            #eventListV {
+                                font-size: 6rem;
+                                color: #424e4f;
+                                font-weight: lighter;
+                            }
+                            /* The Modal (background) */
+                            
+                            .modal {
+                                display: none;
+                                /* Hidden by default */
+                                position: fixed;
+                                /* Stay in place */
+                                z-index: 1;
+                                /* Sit on top */
+                                left: 0;
+                                top: 0;
+                                width: 100%;
+                                /* Full width */
+                                height: 100%;
+                                /* Full height */
+                                overflow: auto;
+                                /* Enable scroll if needed */
+                                background-color: rgb(0, 0, 0);
+                                /* Fallback color */
+                                background-color: rgba(0, 0, 0, 0.4);
+                                /* Black w/ opacity */
+                            }
+                            /* Modal Content/Box */
+                            
+                            .modal-content {
+                                background-color: #fefefe;
+                                margin: 15% auto;
+                                /* 15% from the top and centered */
+                                padding: 20px;
+                                border: 1px solid #888;
+                                width: 80%;
+                                /* Could be more or less, depending on screen size */
+                            }
+                            /* The Close Button */
+                            
+                            .close {
+                                color: #aaa;
+                                float: right;
+                                font-size: 28px;
+                                font-weight: bold;
+                            }
+                            .close:hover,
+                            .close:focus {
+                                color: black;
+                                text-decoration: none;
+                                cursor: pointer;
+                            }
+                            /* Modal Header */
+                            
+                            .modal-header {
+                                padding: 2px 16px;
+                                background-color: #5cb85c;
+                                color: white;
+                            }
+                            /* Modal Body */
+                            
+                            .modal-body {
+                                padding: 2px 16px;
+                            }
+                            /* Modal Footer */
+                            
+                            .modal-footer {
+                                padding: 2px 16px;
+                                background-color: #5cb85c;
+                                color: white;
+                            }
+                            /* Modal Content */
+                            
+                            .modal-content {
+                                position: relative;
+                                background-color: #fefefe;
+                                margin: auto;
+                                padding: 0;
+                                border: 1px solid #888;
+                                width: 80%;
+                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                                -webkit-animation-name: animatetop;
+                                -webkit-animation-duration: 0.4s;
+                                animation-name: animatetop;
+                                animation-duration: 0.4s
+                            }
+                            /* Add Animation */
+                            
+                            @-webkit-keyframes animatetop {
+                                from {
+                                    top: -300px;
+                                    opacity: 0
+                                }
+                                to {
+                                    top: 0;
+                                    opacity: 1
+                                }
+                            }
+                            @keyframes animatetop {
+                                from {
+                                    top: -300px;
+                                    opacity: 0
+                                }
+                                to {
+                                    top: 0;
+                                    opacity: 1
+                                }
+                            }
+                            .myBtn {
+                                display: none;
+                            }
