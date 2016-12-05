@@ -12,7 +12,8 @@
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
-    <link href="alternateStyles.css" rel="stylesheet">
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,47 +47,87 @@
         </div>
     </nav>
 -->
-    <div class="container2">
+    <div class="container1">
         <div class="row row1">
 
-            <div class="col-md-12" id="time">
-                <h1 id="timeElementV"> 7:21 </h1>
+            <div class="col-md-8" id="time">
+                <h1 id="timeElement"> 7:21 </h1>
                 <h3 id="dateElement"> Tuesday Nov. 8th </h3>
             </div>
 
-        </div>
-        <!--
-        <div class="row">
-
-            <div class="col-md-12" id="bibleVerseV">
-                <p> Then Jesus spoke to them again, saying, “I am the light of the world. He who follows Me shall not walk in darkness, but have the light of life.”
-                    <br>John 8:12</p>
+            <div class="col-md-4" id="events">
+                <img src="images/VClouds Weather Icons/34.png" id="weatherImg">
+                <h2 id="currentTemp"> 46° </h2>
             </div>
+
         </div>
--->
+
         <div class="row">
-            <div class="col-md-6" id="events">
+            <div class="col-md-12">
                 <h2 id="eventHeader"> Upcoming Events</h2>
 
-                <ul id="eventListV">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <ul id="eventList">
                     <li>Clayton Chapel 11/2</li>
                     <li>FHU Olympics 11/4</li>
                 </ul>
             </div>
-            <div class="col-md-6" id="weather">
-                <img src="images/VClouds Weather Icons/34.png" id="weatherImgV">
-                <h2 id="currentTempV"> 46° </h2>
+            <div class="col-md-6">
+                <ul id="eventList">
+                    <li>Clayton Chapel 11/2</li>
+                    <li>FHU Olympics 11/4</li>
+                </ul>
             </div>
         </div>
+        <!--
+        <div class="row">
 
+            <div class="col-md-8" id="bibleVerse">
+                <p> Then Jesus spoke to them again, saying, “I am the light of the world. He who follows Me shall not walk in darkness, but have the light of life.”
+                    <br>John 8:12</p>
+            </div>
+
+            <div class="col-md-4" id="weather">
+                <img src="images/VClouds Weather Icons/34.png" id="weatherImg">
+                <h2 id="currentTemp"> 46° </h2>
+            </div>
+
+-->
+
+        <!-- Trigger/Open The Modal -->
+        <!--
+            <button id="myBtn">Open Modal</button>
+
+            <!-- The Modal -->
+        <!--
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+        <!--
+                <div class="modal-content">
+                    <span class="close">x</span>
+                    <p>Some text in the Modal..</p>
+                </div>
+
+        </div>
+-->
     </div>
+
+
+
     <!-- /.container -->
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="javaScript.js"></script>
 </body>
 
 </html>
