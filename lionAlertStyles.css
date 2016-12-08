@@ -4,21 +4,21 @@ body {
 #lionAlertHead {
     text-align: center;
     font-size: 12rem;
-    color: white;
+    color: #ff0000;
     margin: 0 auto;
     padding-top: 8rem;
     padding-bottom: 4rem;
 }
 #alertBox {
     text-align: center;
-    color: white;
-    background-color: red;
+    color: #1b1d1e;
+    background-color: #ff6600;
     height: 60rem;
     font-size: 8rem;
 }
 #time #timeElement {
     text-align: center;
     font-size: 10rem;
-    color: white;
+    color: #ff0000;
     margin: 0 auto;
 }

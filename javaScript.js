@@ -161,4 +161,57 @@ setInterval(function () {
 
 }, 600000)
 
+function getLionAlerts() {
+    //get the rss feed
+
+    var rssURL = "http://www.getrave.com/rss/FHU/channel1";
+
+    $.ajax({
+        type: "GET",
+        url: rssURL,
+        dataType: "xml",
+        error: function () {
+            console.log("ERROR: Unable to load RSS feed. Check the URL and your connection status.");
+        },
+        success: function (xml) {
+
+            var $items = $(xml).find("item");
+
+            $items.each(function () {
+                // extract the alert title
+                var lionAlertTitle = $(this).find("title").text();
+                console.log(lionAlertTitle);
+                $("#lionAlertHead").text(lionAlertTitle);
+
+                // extract the alert description 
+                var lionAlertDescription = $(this).find("description").text();
+                console.log(lionAlertDescription);
+                $("#alertBox").text(lionAlertDescription)
+
+                var lionAlertDateString = $(this).find("pubDate").text();
+
+                var lionAlertDate = new Date(lionAlertDateString);
+                console.log(lionAlertDate);
+                console.log(lionAlertDateString);
+                console.log(lionAlertDate.getMinutes());
+
+                var currentTime = new Date();
+
+                // if (lionAlertDate.getMinutes() >= currentTime.getMinutes() - 15) {
+                //  var newUrl = "http://127.0.0.1:56895/lionAlert.html";
+                // window.location.replace(newUrl);
+                //  } else {}
+
+
+
+            });
+
+        }
+    });
+
+}
+
+setInterval(getLionAlerts(), 5000)
+
+
 $(document).ready(main);
