@@ -43,6 +43,9 @@ setInterval(function () {
     if (hour > 12) {
         hour = hour - 12;
     } else {}
+    if (hour === 0) {
+        hour = hour + 12;
+    } else {}
 
     var day = currectDateTime.getDay();
     var daysofweek = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
@@ -182,11 +185,13 @@ function getLionAlerts() {
                 var lionAlertTitle = $(this).find("title").text();
                 console.log(lionAlertTitle);
                 $("#lionAlertHead").text(lionAlertTitle);
+                $("#lionAlertHead-V").text(lionAlertTitle);
 
                 // extract the alert description 
                 var lionAlertDescription = $(this).find("description").text();
                 console.log(lionAlertDescription);
-                $("#alertBox").text(lionAlertDescription)
+                $("#alertBox").text(lionAlertDescription);
+                $("#alertBox-V").text(lionAlertDescription)
 
                 var lionAlertDateString = $(this).find("pubDate").text();
 

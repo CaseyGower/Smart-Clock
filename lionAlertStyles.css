@@ -1,24 +1,46 @@
-body {
-    background: #2E2E2E;
-}
-#lionAlertHead {
-    text-align: center;
-    font-size: 12rem;
-    color: #ff0000;
-    margin: 0 auto;
-    padding-top: 8rem;
-    padding-bottom: 4rem;
-}
-#alertBox {
-    text-align: center;
-    color: #1b1d1e;
-    background-color: #ff6600;
-    height: 60rem;
-    font-size: 8rem;
-}
-#time #timeElement {
-    text-align: center;
-    font-size: 10rem;
-    color: #ff0000;
-    margin: 0 auto;
-}
+                                body {
+                                background: #2E2E2E;
+                            }
+                            #lionAlertHead {
+                                text-align: center;
+                                font-size: 12rem;
+                                color: #ff0000;
+                                margin: 0 auto;
+                                padding-top: 8rem;
+                                padding-bottom: 4rem;
+                            }
+                            #alertBox {
+                                text-align: center;
+                                color: #1b1d1e;
+                                background-color: #ff6600;
+                                height: 60rem;
+                                font-size: 8rem;
+                            }
+                            #time #timeElement {
+                                text-align: center;
+                                font-size: 10rem;
+                                color: #ff0000;
+                                margin: 0 auto;
+                            }
+                            #lionAlertHead-V {
+                                text-align: center;
+                                font-size: 20rem;
+                                color: #ff0000;
+                                margin: 0 auto;
+                                padding-top: 8rem;
+                                padding-bottom: 4rem;
+                            }
+                            #alertBox-V {
+                                text-align: center;
+                                color: #1b1d1e;
+                                background-color: #ff6600;
+                                height: 120rem;
+                                width: 90%;
+                                font-size: 8rem;
+                                margin: 0 auto;
+                            }
+                            #time-V #timeElement {
+                                text-align: center;
+                                font-size: 15rem;
+                                color: #ff0000;
+                                margin: 0 auto;
