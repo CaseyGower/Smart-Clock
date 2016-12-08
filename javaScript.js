@@ -121,16 +121,40 @@ setInterval(function () {
             console.log(temp);
             $("#currentTemp").text(temp + " °");
 
-            var condition = data.currently.summary;
+            var condition = data.currently.icon;
             console.log(condition);
-            $("#currentCondition").text(condition);
 
-            if (condition.equals(clear)) {
-                $("weatherImg").
+
+            if (condition === "clear-day") {
+                document.getElementById("weatherImg").src = "images/VClouds Weather Icons/ clear-day.png";
+            } else if (condition === "clear-night") {
+                document.getElementById("weatherImg").src = "images/VClouds Weather Icons/clear-night.png";
+            } else if (condition === "rain") {
+                document.getElementById("weatherImg").src = "images/VClouds Weather Icons/rain.png";
+            } else if (condition === "snow") {
+                document.getElementById("weatherImg").src = "images/VClouds Weather Icons/snow.png";
+            } else if (condition === "sleet") {
+                document.getElementById("weatherImg").src = "images/VClouds Weather Icons/sleet.png";
+            } else if (condition === "wind") {
+                document.getElementById("weatherImg").src = "images/VClouds Weather Icons/wind.png";
+            } else if (condition === "fog") {
+                document.getElementById("weatherImg").src = "images/VClouds Weather Icons/fog.png";
+            } else if (condition === "cloudy") {
+                document.getElementById("weatherImg").src = "images/VClouds Weather Icons/cloudy.png";
+            } else if (condition === "partly-cloudy-day") {
+                document.getElementById("weatherImg").src = "images/VClouds Weather Icons/partly-cloudy-day.png";
+            } else if (condition === "partly-cloudy-night") {
+                document.getElementById("weatherImg").src = "images/VClouds Weather Icons/partly-cloudy-night.png";
+            } else {
+
+                document.getElementById("weatherImg").src = "images/VClouds Weather Icons/na.png";
+
             }
+
+
         },
 
-        type: 'GET'
+        type: "GET"
     });
 
 
