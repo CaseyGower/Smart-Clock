@@ -182,7 +182,7 @@ setInterval(function () {
 
 
 
-}, 6000)
+}, 600000)
 
 function getLionAlerts() {
     //get the rss feed
