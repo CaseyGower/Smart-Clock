@@ -76,6 +76,8 @@
                                 color: #c13b00;
                                 font-weight: bold;
                                 text-align: center;
+                                padding-top: 18rem;
+                                padding-bottom: 6rem;
                             }
                             #bibleVerseV {
                                 font-size: 6rem;
@@ -85,7 +87,7 @@
                                 text-align: center;
                             }
                             #currentTempV {
-                                font-size: 25rem;
+                                font-size: 15rem;
                                 color: #c13b00;
                                 margin: 0 auto;
                                 text-align: center;
@@ -97,6 +99,7 @@
                                 font-size: 6rem;
                                 color: #424e4f;
                                 font-weight: lighter;
+                                padding-bottom: 20rem;
                             }
                             /* The Modal (background) */
                             

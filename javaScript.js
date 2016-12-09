@@ -94,6 +94,7 @@ setInterval(function () {
     }
 
     $("#timeElement").text(hour + ":" + minutes);
+    $("#timeElementV").text(hour + ":" + minutes);
     $("#dateElement").text(today + " " + month + " " + date);
     console.log(today + " " + month + " " + date)
 
@@ -139,24 +140,31 @@ setInterval(function () {
             } else if (condition === "rain") {
                 document.getElementById("weatherImg").src = "images/VClouds Weather Icons/rain.png";
                 document.getElementById("weatherImgV").src = "images/VClouds Weather Icons/rain.png";
+
             } else if (condition === "snow") {
                 document.getElementById("weatherImg").src = "images/VClouds Weather Icons/snow.png";
                 document.getElementById("weatherImgV").src = "images/VClouds Weather Icons/snow.png";
+
             } else if (condition === "sleet") {
                 document.getElementById("weatherImg").src = "images/VClouds Weather Icons/sleet.png";
                 document.getElementById("weatherImgV").src = "images/VClouds Weather Icons/sleet.png";
+
             } else if (condition === "wind") {
                 document.getElementById("weatherImg").src = "images/VClouds Weather Icons/wind.png";
                 document.getElementById("weatherImgV").src = "images/VClouds Weather Icons/wind.png";
+
             } else if (condition === "fog") {
                 document.getElementById("weatherImg").src = "images/VClouds Weather Icons/fog.png";
                 document.getElementById("weatherImgV").src = "images/VClouds Weather Icons/fog.png";
+
             } else if (condition === "cloudy") {
                 document.getElementById("weatherImg").src = "images/VClouds Weather Icons/cloudy.png";
                 document.getElementById("weatherImgV").src = "images/VClouds Weather Icons/cloudy.png";
+
             } else if (condition === "partly-cloudy-day") {
                 document.getElementById("weatherImg").src = "images/VClouds Weather Icons/partly-cloudy-day.png";
                 document.getElementById("weatherImgV").src = "images/VClouds Weather Icons/partly-cloudy-day.png";
+
             } else if (condition === "partly-cloudy-night") {
                 document.getElementById("weatherImg").src = "images/VClouds Weather Icons/partly-cloudy-night.png";
                 document.getElementById("weatherImgV").src = "images/VClouds Weather Icons/partly-cloudy-night.png";
